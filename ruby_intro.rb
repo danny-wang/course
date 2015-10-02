@@ -59,7 +59,7 @@ end
 
 def binary_multiple_of_4? s
   # YOUR CODE HERE
-  if /^0b[01]*/.match s
+  if /^0b[01]+/.match s
     if Integer(s)%4==0
       puts "The binary number transforms to decimal number is: #{Integer(s)}"
       return true
@@ -140,6 +140,8 @@ end
 #test the function binary_multiple_of_4? s
 # s="0b10000"
 # puts binary_multiple_of_4? s
+ s="0b1"
+ puts binary_multiple_of_4? s
 # s="123131341414"
 # puts binary_multiple_of_4? s
 # s="0x233434ff"
