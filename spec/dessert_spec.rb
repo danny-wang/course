@@ -2,7 +2,7 @@ require 'dessert'
 
 require 'byebug'
 
-describe Dessert, :pending => true do
+describe Dessert do
 
   describe 'cake' do
 
@@ -84,7 +84,7 @@ describe Dessert, :pending => true do
 
 end
 
-describe JellyBean, :pending => true do
+describe JellyBean do
 
   describe 'when non-licorice' do
 

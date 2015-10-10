@@ -2,7 +2,7 @@ require 'rock_paper_scissors'
 
 require 'byebug'
 
-describe RockPaperScissors, :pending => true do
+describe RockPaperScissors do
 
   before(:each) do
 
