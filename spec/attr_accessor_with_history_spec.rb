@@ -14,7 +14,7 @@ class TestClass2
 
 end
 
-describe '#attr_accessor_with_history', :pending => true do
+describe '#attr_accessor_with_history' do
 
   shared_examples 'all cases' do
 

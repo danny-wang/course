@@ -9,8 +9,24 @@ class Class
     attr_reader attr_name+"_history" # create bar_history getter
 
     class_eval %Q{
+      def #{attr_name}
+      	@attr_name
+      end
 
-      # YOUR CODE HERE
+      def #{attr_name}= value
+      	if @attr_name==nil
+      		@#{attr_name+"_history"}=Array.new
+      		
+      	end
+      	a=@attr_name
+      	@#{attr_name+"_history"}.push(a)
+      	@attr_name= value
+      	
+      		
+      end
+
+
+
 
     }
 
